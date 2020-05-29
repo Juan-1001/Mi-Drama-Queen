@@ -1,0 +1,122 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+}
+.card{
+    border-radius: 10px;
+}
+#card{
+    --animate-duration: 1.5s;
+}
+.animate__animated .animate__flipInX, .animate__animated .animate__flipInY{
+    --animate-duration: 3s;
+}
+.row{
+    margin-top: 150px !important;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 900px;
+}
+/* bnt 1 */
+.btn{
+    margin: 10px;
+    width: 120px;
+    height: 50px;
+    background: #3b89b6;
+    border: 1px solid #69b0da;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+.btn::before{
+    content: 'Sí mi amor';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    transition: .2s ease;
+}
+
+.btn::after{
+    content: 'Lo sabía';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn:hover::before{
+    transform: translate(-50%, -50%s) scale(3);
+    opacity: 0;
+}
+
+.btn:hover::after{
+    transform: translate(-50%, -50%s) scale(1);
+    opacity: 1;
+}
+/* bnt 2 */
+.btn2{
+    width: 120px;
+    height: 50px;
+    background: #3b89b6;
+    border: 1px solid #69b0da;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+.btn2::before{
+    content: 'No ki asco';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    transition: .2s ease;
+}
+
+.btn2::after{
+    content: 'Sí quiero';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn2:hover::before{
+    transform: translate(-50%, -50%s) scale(3);
+    opacity: 0;
+}
+
+.btn2:hover::after{
+    transform: translate(-50%, -50%s) scale(1);
+    opacity: 1;
+}
